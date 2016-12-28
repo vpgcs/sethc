@@ -9,4 +9,7 @@ int main(int argc, char* argv[]){
         cerr<<argv[i]<<" ";
     }
     cerr<<endl;
+
+    string s;
+    getline(cin, s);
 }
